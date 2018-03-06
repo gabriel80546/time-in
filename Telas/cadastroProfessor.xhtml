@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<title>Cadastro Professor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="cadastroProfessor.css" />
+
+	<!-- Fonte Inconsolata -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
+
+</h:head>
+<h:body>
+
+
+
+<div class="master">
+
+	<div class="filha">
+		<div class="linhas">
+			<br />
+			<h:outputLabel value="Cadastro Professor" style="font-size: 200%;" />
+			<br />
+			<br />
+			<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="Nome" />
+				<p:inputText />
+			</div>
+
+			<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="CPF" />
+				<p:inputText />
+			</div>
+
+			<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="RA" />
+				<p:inputText />
+			</div>
+
+			<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="E-mail" />
+				<p:inputText />
+			</div>
+
+			<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="Telefone" />
+				<p:inputText />
+			</div>
+
+			<div class="colunas" style="padding: 5px;">
+				<h:outputLabel value="Cursos" />
+				<div class="linhas" style="flex-grow: 8; align-items: center;">
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="Eletronica" />
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox disabled="true" />
+					<s><h:outputLabel value="Administração" /></s>
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="Informática" />
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="leitura de cartas" />
+					</div>
+				</div>
+
+			</div>
+			<div class="colunas" style="padding: 5px;">
+				<h:outputLabel value="Disciplinas" />
+				<div class="linhas" style="flex-grow: 8; align-items: center;">
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="Assembly" />
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="x86" />
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="intel" />
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="Processador" />
+					</div>
+				</div>
+
+			</div>
+			<div class="colunas" style="padding: 5px;">
+				<h:outputLabel value="Turmas" />
+				<div class="linhas" style="flex-grow: 8; align-items: center;">
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="1Q" />
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="2Q" />
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox disabled="true" />
+					<s><h:outputLabel value="3Q" /></s>
+					</div>
+					<div class="colunas">
+					<p:selectBooleanCheckbox />
+					<h:outputLabel value="4Q" />
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+			<br />
+			<br />
+			<p:commandButton value="Cadastrar" />
+			<br />
+	</div>
+
+
+
+
+</div>
+
+</h:body>
+</html>

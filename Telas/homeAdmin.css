@@ -1,0 +1,77 @@
+body
+{
+	font-family: 'Inconsolata', monospace;
+}
+.master
+{
+	display: flex;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+
+	align-items: center;
+	justify-content: center;
+}
+.filha
+{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #eee;
+	align-items: center;
+}
+.filha2
+{
+	flex-direction: row;
+	display: flex;
+}
+.CPF_Senha
+{
+	flex-direction: column;
+	display: flex;
+	align-content: space-between;
+	border-radius: 10px;
+}
+.CPF_Senha_Campos
+{
+	flex-direction: column;
+	display: flex;
+	align-content: space-between;
+	border-radius: 10px;
+}
+.filha3
+{
+	flex-direction: row;
+	display: flex;
+}
+.linhas
+{
+	display: flex;
+	flex-direction: column;
+}
+.linhaCentro
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.colunas
+{
+	display: flex;
+	flex-direction: row;
+}
+.colunaCentro
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.CadastroAluno
+{
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 20px 20px 20px 20px;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<title>Cadastro Aluno</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="cadastroAluno.css" />
+
+	<!-- Fonte Inconsolata -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
+
+</h:head>
+
+<h:body>
+
+
+<div style="display: flex; position: absolute; top:0; left:0; width:100%; height: 50px; justify-content: flex-start; align-items: center; background-color: #eee;">
+	<div style="z-index:1000;">
+&nbsp;&nbsp;
+<p:selectOneMenu value="Cadastrar" editable="true">
+	<f:selectItem itemLabel="Aluno"/>
+	<f:selectItem itemLabel="Professor" />
+	<f:selectItem itemLabel="Inspetor" />
+	<f:selectItem itemLabel="Sala" />
+	<f:selectItem itemLabel="Turma" />
+	<f:selectItem itemLabel="Curso" />
+	<f:selectItem itemLabel="Disciplina" />
+</p:selectOneMenu>
+
+&nbsp;
+
+<p:selectOneMenu value="Editar" editable="true">
+	<f:selectItem itemLabel="Aluno"/>
+	<f:selectItem itemLabel="Professor" />
+	<f:selectItem itemLabel="Inspetor" />
+	<f:selectItem itemLabel="Sala" />
+	<f:selectItem itemLabel="Turma" />
+	<f:selectItem itemLabel="Curso" />
+	<f:selectItem itemLabel="Disciplina" />
+</p:selectOneMenu>
+	</div>
+</div>
+
+
+<div style="display: flex; position: absolute; top:0; left:0; width:100%; height:50px; justify-content: flex-end; align-items: center; background-color: #eee;">
+	<div style="z-index:1000;">
+<p:commandButton value="Cargas" icon="fa fa-upload" type="button"/>
+&nbsp;
+<p:commandButton value="Notificações" icon="fa fa-bell-o" type="button"/>
+&nbsp;&nbsp;
+	</div>
+</div>
+
+
+</h:body>
+</html>

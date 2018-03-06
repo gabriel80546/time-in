@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<title>Cadastro Aluno</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="cadastroSala.css" />
+
+	<!-- Fonte Inconsolata -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
+
+</h:head>
+
+<h:body>
+
+
+
+<div class="master">
+	<div class="filha">
+		<br />
+		<h:outputLabel value="Cadastro Inspetor" style="font-size: 200%;" />
+		<br />
+		<br />
+		<div class="colunas">
+			<div class="linhas">
+				<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="Nome" />
+				<p:inputText />
+				</div>
+
+				<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="CPF" />
+				<p:inputText />
+				</div>
+
+				<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="RA" />
+				<p:inputText />
+				</div>
+
+
+				<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="E-Mail" />
+				<p:inputText />
+				</div>
+
+				<div class="colunas" style="justify-content: space-between;">
+				<h:outputLabel value="Telefone" />
+				<p:inputText />
+				</div>
+
+			</div>
+
+			&nbsp;
+			&nbsp;
+
+
+		</div>
+		<br />
+		<br />
+		<p:commandButton value="Cadastrar" />
+		<br />
+	</div>
+</div>
+
+</h:body>
+</html>

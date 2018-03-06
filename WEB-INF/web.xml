@@ -9,13 +9,21 @@
 		<servlet-name>TCC</servlet-name>
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
 	</servlet>
-
+	<context-param>
+			<param-name>primefaces.THEME</param-name>
+			<param-value>flick</param-value>
+	</context-param>
 
 
 	<servlet-mapping>
 		<servlet-name>TCC</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
+
+	<context-param>
+		<param-name>primefaces.FONT_AWESOME</param-name>
+		<param-value>true</param-value>
+	</context-param>
 
 
 </web-app>

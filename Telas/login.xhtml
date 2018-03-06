@@ -8,35 +8,44 @@
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>hello jsf</title>
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<title>Time-in Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="login.css" />
+
+	<!-- Fonte Inconsolata -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
+
 </h:head>
 
 <h:body>
 
-	<div class="ui-g">
-		<div class="ui-g-4"></div>
-		<div class="ui-g-4">
-			<p:panelGrid columns="2" layout="grid" style="margin-top:20px">
 
-				<h:outputLabel value="CPF:" />
-				<p:inputText />
 
-				<h:outputLabel value="Senha:"  />
-				<p:inputText />
+<div class="master">
+	<div class="filha">
+		<div class="linhas" style="display: flex;align-items: center;">
+		<h:graphicImage value="relogio.png" style="padding: 30px;" />
+		</div>
+		<div class="colunas" style="justify-content: space-between;">
+			<h:outputLabel value="CPF" style="padding: 2px 5px 2px 5px;" />
+			<p:inputText />
+		</div>
 
-			</p:panelGrid>
+		<div class="colunas" style="justify-content: space-between;">
+			<h:outputLabel value="Senha" style="padding: 2px 5px 2px 5px;" />
+			<p:password />
+		</div>
 
-			<p:link value="Recuperar Senha" />
-			<br />
+
+		<div class="linhas" style="display: flex;align-items: center;">
+			<p:link value="Recuperar Senha" style="padding: 10px;"/>
+			<div style="padding: 10px;">
 			<p:commandButton value="Logar" />
-
+			</div>
 		</div>
 	</div>
-
-
+</div>
 
 </h:body>
-
-
 </html>
